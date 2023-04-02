@@ -102,3 +102,12 @@ p {
     transform: translate(24px, 0);
   }
 }
+@media screen and (max-width:630px) {
+  .app-form{
+    width: 90%;
+  }
+  .title{
+    padding: 0 20px;
+    font-size: 22px;
+  }
+}
