@@ -30,15 +30,17 @@ const home = () => {
     // Fetch the list of regions from an API or a database
     const regionsData: Region[] = [
       { id: 1, name: 'Tashkent' },
-      { id: 2, name: 'Samarkand' },
+      { id: 2, name: 'Andijan' },
       { id: 3, name: 'Bukhara' },
-      { id: 4, name: 'Khiva' },
-      { id: 6, name: 'Andijan' },
-      { id: 7, name: 'Namangan' },
-      { id: 8, name: 'Navoiy' },
-      { id: 9, name: 'Fergana' },
-      { id: 10, name: 'Karakalpakstan' },
-      { id: 11, name: 'Samarqand' }
+      { id: 4, name: 'Fergana' },
+      { id: 5, name: "Jizzakh" },
+      { id: 6, name: 'Namangan' },
+      { id: 7, name: 'Navoiy' },
+      { id: 8, name: 'Qashqadaryo' },
+      { id: 9, name: 'Samarkand' },
+      { id: 10, name: 'Sirdaryo' },
+      { id: 12, name: 'Tashkent' },
+      { id: 14, name: 'Karakalpakstan' },
     ];
 
     setRegions(regionsData);
