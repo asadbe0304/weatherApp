@@ -73,7 +73,7 @@ const home = () => {
           <FormControl className='app-form'>
 
             <InputLabel variant="standard" htmlFor="uncontrolled-native">
-              Select
+              Viloyatni tanlang
             </InputLabel>
             <NativeSelect
               value={selectedRegionId} className='selectApp' onChange={handleRegionChange}
