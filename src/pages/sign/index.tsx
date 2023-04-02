@@ -31,8 +31,8 @@ const LoginPage = () => {
       } else {
         history("/")
       }
-    } catch (error: ChangeEvent<HTMLAllCollection>) {  
-      setErrorMessage(error.response.data.error);
+    } catch (error) {  
+      // setErrorMessage(error.response.data.error);
     }
   };
 
