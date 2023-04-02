@@ -109,9 +109,9 @@ const home = () => {
           {weatherData ? (
             <div className='info-weather'>
               <h2 className='title-info'>{weatherData.name}</h2>
-              <p><MdSunnySnowing /> Harorat: {weatherData.main.temp}°C</p>
-              <p><VscDebugBreakpointUnsupported /> Sezilish: {weatherData.main.feels_like}°C</p>
-              <p><GiWaterDrop /> Namlik: {weatherData.main.humidity}%</p>
+              <p><MdSunnySnowing className='icons' /> Harorat: {weatherData.main.temp}°C</p>
+              <p><VscDebugBreakpointUnsupported className='icons' /> Sezilish: {weatherData.main.feels_like}°C</p>
+              <p><GiWaterDrop className='icons'/> Namlik: {weatherData.main.humidity}%</p>
             </div>
           ) : (
             <div className="lds-ellipsis"><div></div><div></div><div></div></div>
