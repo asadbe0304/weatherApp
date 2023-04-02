@@ -71,6 +71,20 @@ const home = () => {
       <Header />
       <div className="app-weather">
         <div className='app-inner'>
+          <div className='temp-title'>
+            <MdSunnySnowing  className='title icon'/>
+            <Typography component="h2" className='title'>Harorat</Typography>
+          </div>
+          {
+            weatherData ? (
+              <h4 className='title' style={{ fontSize: "35px" }}>{
+                `${weatherData.main.temp}°C`
+              }
+              </h4>
+            ) :
+
+              <h4 className='title' style={{ fontSize: "35px" }}>12°C</h4>
+          }
           <Typography component="h2" className='title'>O'zbekiston Respublikasining ob-havo Malumotlari</Typography>
           <FormControl className='app-form'>
 
