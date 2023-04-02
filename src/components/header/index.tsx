@@ -66,6 +66,7 @@ const header: React.FC<Props> = () => {
             sx={{ width: 300 }}
             renderInput={(params) => <TextField {...params} label="Movie" />}
           /> */}
+          
           <div>
             <IconButton
               size="large"
@@ -77,7 +78,6 @@ const header: React.FC<Props> = () => {
             >
               <AccountCircle />
             </IconButton>
-
             <Menu
               id="menu-appbar"
               // anchorEl={anchorEl}
