@@ -1,6 +1,6 @@
 import { ChangeEvent, useState } from 'react';
 import axios from 'axios';
-import {TextField, Button} from "@mui/material"
+import { TextField, Button } from "@mui/material"
 import { Navigate, useNavigate } from 'react-router-dom';
 import "./style.scss"
 interface User {
@@ -31,9 +31,7 @@ const LoginPage = () => {
       } else {
         history("/")
       }
-      // Do something with the authentication token, e.g. save it to local storage
-    } catch (error: ChangeEvent<HTMLAllCollection>) {
-      // console.log(error.response.data);
+    } catch (error: ChangeEvent<HTMLAllCollection>) {  
       setErrorMessage(error.response.data.error);
     }
   };
@@ -43,18 +41,16 @@ const LoginPage = () => {
       <div className='login-top'>
         <h1>Accountingizga Kirish</h1>
       </div>
-        <form className='form-sign' onSubmit={handleFormSubmit}>
-          <div>
-            {/* <label htmlFor="email">Email:</label> */}
-            <TextField type="email" label="Email" id="email" name="email" value={login.email} onChange={handleInputChange} required />
-          </div>
-          <div>
-            {/* <label htmlFor="password">Password:</label> */}
-            <TextField label="Password" type="password" id="password" name="password" value={login.password} onChange={handleInputChange} required />
-          </div>
-          {errorMessage && <div style={{ color: 'red' }}>{errorMessage}</div>}
-          <Button variant='contained' type="submit">Login</Button>
-        </form>
+      <form className='form-sign' onSubmit={handleFormSubmit}>
+        <div>
+          <TextField type="email" label="Email" id="email" name="email" value={login.email} onChange={handleInputChange} required />
+        </div>
+        <div>
+          <TextField label="Password" type="password" id="password" name="password" value={login.password} onChange={handleInputChange} required />
+        </div>
+        {errorMessage && <div style={{ color: 'red' }}>{errorMessage}</div>}
+        <Button variant='contained' type="submit">Login</Button>
+      </form>
     </div>
   );
 };
