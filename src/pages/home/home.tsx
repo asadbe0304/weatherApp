@@ -72,7 +72,7 @@ const home = () => {
           <Typography component="h2" className='title'>O'zbekiston Respublikasining ob-havo Malumotlari</Typography>
           <FormControl className='app-form'>
 
-            <InputLabel variant="standard" htmlFor="uncontrolled-native">
+            <InputLabel className='input' variant="standard" htmlFor="uncontrolled-native">
               Viloyatni tanlang
             </InputLabel>
             <NativeSelect

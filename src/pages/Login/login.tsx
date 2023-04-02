@@ -34,6 +34,9 @@ const login: React.FC<LoginProps> = () => {
 
   return (
     <div className='login-form'>
+      <div className='login-top'>
+        <h3>Ro'yhatdan o'tish</h3>
+      </div>
       <form onSubmit={handleSubmit} className='form'>
         <div>
           <TextField
